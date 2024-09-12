@@ -1,0 +1,38 @@
+.nav {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    cursor: pointer;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background-color: black;
+    transition: all 1s ease;
+}
+
+.name {
+    margin-left: 10px;
+    cursor: default;
+}

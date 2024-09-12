@@ -1,0 +1,113 @@
+.HomePage {
+    background-image: url("./assets/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+}
+.HomePage::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0)
+    ); 
+    
+}
+
+.quote {
+    margin-left: 125px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 30%;
+    font-size: 3.5rem;
+    text-wrap: wrap;
+    padding: 10px 20px;
+    text-align: start;
+    word-spacing: 10px;
+    /* background-color: blue; */
+}
+.search {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.search > img {
+    /* justify-self: end */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.search input {
+    background-color: transparent;
+    border: none;
+    height: 70%;
+    outline: none;
+    color: black;
+    flex-grow: 1;
+    max-width: auto;
+    font-size: 16px;
+}
+.search input::placeholder {
+    color: grey;
+}
+.search button {
+    background-color: white;
+    color: black;
+    padding: 8px 50px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search button:hover {
+    /* background-color: #f0f0f0; */
+    color: #333;
+}
+.search button:active {
+    background-color: #e0e0e0;
+}
+.search button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.topDestinations {
+    color: #333;
+    /* background-color: red; */
+    width: 84%;
+    padding: 15px;
+    margin: 15px auto;
+    text-align: left;
+}
+.cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.cards::-webkit-scrollbar {
+    display: none;
+}

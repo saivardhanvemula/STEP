@@ -1,0 +1,21 @@
+#root {
+    max-width: 1280px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+
+    width:100vw
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: cadetblue;
+    bottom: 0;
+}
+
+/* .nav{
+    background-color: black;
+} */
