@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import Feedback from "./FeedBack";
 import "./HomePage.css";
 import searchLogo from "../assets/Search2.svg";
 import friend from "../assets/friends.svg";
@@ -99,6 +100,7 @@ export const HomePage = () => {
                     </div>
                 </div>
             </div>
+            <Feedback/>
             <Footer />
         </div>
     );

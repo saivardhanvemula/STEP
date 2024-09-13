@@ -1,0 +1,93 @@
+/* TestimonialPage.css */
+.testimonial-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.feedback-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-page h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.testimonial-page h3 {
+    margin: 5px 0;
+    color: #666;
+}
+
+.testimonial-page p {
+    font-size: 16px;
+    color: #444;
+}
+.experience-form {
+    margin-top: 40px;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.experience-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.experience-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row label {
+    flex: 1;
+}
+
+.experience-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-form input,
+.experience-form textarea {
+    color: #333;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #958e8e;
+}
+
+.experience-form button {
+    padding: 10px 20px;
+    background-color: #d32f2f; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}

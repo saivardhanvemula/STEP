@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     width: 100vw;
     overflow-y: scroll;
     /* background-color: red; */

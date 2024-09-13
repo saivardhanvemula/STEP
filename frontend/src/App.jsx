@@ -4,13 +4,10 @@ import { HomePage } from "./components/HomePage";
 import LogIn from "./components/LogIn";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Support from "./components/Support";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-    const [activeLink, setActiveLink] = useState("Home");
-    const handleLinkClick = (link) => {
-        setActiveLink(link);
-    };
     return (
         <Router>
             <div
@@ -21,6 +18,10 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/login" element={<LogIn />} />
+                    <Route path="/trip" element={<LogIn />} />
+                    <Route path="/travels" element={<LogIn />} />
+                    <Route path="/stays" element={<LogIn />} />
+                    <Route path="/support" element={<Support/>} />
                 </Routes>
                 {/* <Footer /> */}
             </div>
