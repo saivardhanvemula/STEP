@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const [activeLink, setActiveLink] = useState("Home");
     const handleLinkClick = (link) => {
         setActiveLink(link);
+        if(link=="Home") navigate("/");
+        else navigate(`/${link.toLowerCase()}`)
     };
 
     return (
@@ -19,6 +23,22 @@ const Navbar = () => {
                 </span>
                 <span
                     className={`links ${
+                        activeLink === "Trip" ? "active" : ""
+                    }`}
+                    onClick={() => handleLinkClick("Trip")}
+                >
+                    Trip
+                </span>
+                <span
+                    className={`links ${
+                        activeLink === "Travels" ? "active" : ""
+                    }`}
+                    onClick={() => handleLinkClick("Travels")}
+                >
+                    Travels
+                </span>
+                <span
+                    className={`links ${
                         activeLink === "Stays" ? "active" : ""
                     }`}
                     onClick={() => handleLinkClick("Stays")}
@@ -27,25 +47,25 @@ const Navbar = () => {
                 </span>
                 <span
                     className={`links ${
-                        activeLink === "Flights" ? "active" : ""
+                        activeLink === "Support" ? "active" : ""
                     }`}
-                    onClick={() => handleLinkClick("Flights")}
+                    onClick={() => handleLinkClick("Support")}
                 >
-                    Flights
+                    Support
                 </span>
                 <span
                     className={`links ${
-                        activeLink === "Packages" ? "active" : ""
+                        activeLink === "Friend" ? "active" : ""
                     }`}
-                    onClick={() => handleLinkClick("Packages")}
+                    onClick={() => handleLinkClick("Friend")}
                 >
-                    Packages
+                    Make a Friend
                 </span>
                 <span
                     className={`links ${
-                        activeLink === "SignIn/LogIn" ? "active" : ""
+                        activeLink === "LogIn" ? "active" : ""
                     }`}
-                    onClick={() => handleLinkClick("SignIn/LogIn")}
+                    onClick={() => handleLinkClick("LogIn")}
                 >
                     SignIn/LogIn
                 </span>

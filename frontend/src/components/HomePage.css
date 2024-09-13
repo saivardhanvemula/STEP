@@ -1,18 +1,22 @@
 .HomePage {
-    background-image: url("./assets/mountains.jpg");
+    /* background-image: url("./assets/mountains.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100vw;
+    overflow-y: scroll;
     /* background-color: red; */
 }
-.HomePage::before {
+.HomePage::-webkit-scrollbar {
+    display: none;
+}
+/* .HomePage::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 60%;
     background: linear-gradient(
         to top,
@@ -20,7 +24,7 @@
         rgba(0, 0, 0, 0)
     ); 
     
-}
+} */
 
 .quote {
     margin-left: 125px;
@@ -110,4 +114,96 @@
 }
 .cards::-webkit-scrollbar {
     display: none;
+}
+.bookings {
+    color: #333;
+    width: 84%;
+    height: 400px;
+    padding: 30px;
+    margin: 15px auto;
+    /* margin-bottom: 100px; */
+    text-align: left;
+    /* background-color: red/; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.travels {
+    position: relative;
+    /* background-color: blue; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(54, 52, 52);
+    /* display: flex;
+    flex-direction: column; */
+}
+.hotels {
+    position: relative;
+    /* background-color: blue; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(54, 52, 52);
+}
+.travels button,
+.hotels button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.bookings button:hover {
+    scale: 1.1;
+    transition: ease 0.15s;
+}
+h3 {
+    margin-left: 20px;
+    font-size: 2rem;
+}
+.travels {
+    background-image: url("https://images.unsplash.com/photo-1656261538631-3e1d3964763b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hotels {
+    background-image: url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc29ydHxlbnwwfDB8MHx8fDA%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.features {
+    background-color: white;
+    border-radius: 30px;
+    width: 80%;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.features h2 {
+    text-align: start;
+    margin-left: 25px;
+    color: black;
+}
+.feature {
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.title img {
+    height: 50px;
+    scale: 1.1;
+}
+.feature .title {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    /* scale: 1.2; */
+}
+.feature p {
+    text-align: start;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }

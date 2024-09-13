@@ -3,16 +3,14 @@ import './LogIn.css';
 
 const LogIn = () => {
     const [isLogin, setIsLogin] = useState(true); 
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
     };
 
     return (
         <div className='LogIn'>
             <div className='form-container'>
-                <h2>{isLogin ? 'Log In' : 'Sign Up'}</h2>
+                <h2>Trip Planner</h2>
                 <form onSubmit={handleSubmit}>
                     <div className='form-group'>
                         <label htmlFor='email'>Email:</label>
