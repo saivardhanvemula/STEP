@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-h2 {
+.LogIn h2 {
     margin-bottom: 20px;
     text-align: start;
     margin-left: 10px;
@@ -27,14 +27,14 @@ h2 {
     width: 90%;
 }
 
-label {
+.LogIn label {
     display: block;
     margin-bottom: 5px;
     text-align: start;
     color: #333; /* Dark color for better contrast */
 }
 
-input {
+.LogIn input {
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -44,7 +44,7 @@ input {
     font-size: 16px; /* Improved font size for readability */
 }
 
-button {
+.LogIn button {
     /* width: 50%; */
     padding: 10px;
     border: none;
@@ -56,26 +56,8 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.LogIn button:hover {
     background-color: #0056b3;
-}
-
-p {
-    text-align: center;
-    margin-top: 15px;
-    color: #333; /* Dark color for better contrast */
-}
-
-p button {
-    background: none;
-    border: none;
-    color: #007bff;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-p button:hover {
-    text-decoration: underline;
 }
 
 a{

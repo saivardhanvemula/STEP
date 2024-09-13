@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './LogIn.css';
 
 const LogIn = () => {
-    const [isLogin, setIsLogin] = useState(true); // Toggle between login and signup
+    const [isLogin, setIsLogin] = useState(true); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
